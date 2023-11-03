@@ -1,0 +1,18 @@
+[package]
+name = "halo2"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "fibo1"
+path = "src/fibo1.rs"
+
+[[bin]]
+name = "advent2"
+path = "src/advent2.rs"
+
+[dependencies]
+halo2_proofs = { git = "https://github.com/zcash/halo2/", features = ["dev-graph"] }
+plotters = "0.3.0"
+group = "0.13"
+tabbycat = "0.1.2"
